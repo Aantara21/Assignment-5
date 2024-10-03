@@ -16,11 +16,11 @@
             <div class="navbar w-10/12 mx-auto   ">
                 <div class="navbar-start">
 
-                    <a class="btn btn-ghost text-xl bg-green-200">Blog</a>
+                    <a id="blog" class="btn btn-ghost text-xl bg-green-200">Blog</a>
                 </div>
-                <div class="navbar-center  lg:flex fle">
-                    <img src="assets/logo.png" alt="" srcset="">
-                    <h2 class="text-lg font-bold ml-2">Donate Bangladesh</h2>
+                <div class="navbar-center  lg:flex ">
+                    <img class="mx-3" src="assets/logo.png" alt="" srcset="">
+                    <h2 class="text-lg font-bold mr-2">Donate Bangladesh</h2>
 
                 </div>
                 <div class="navbar-end">
@@ -40,19 +40,19 @@
     </header>
     <main>
 
-        <section id="card" class="w-10/12 mx-auto   ">
-            <div class="flex border rounded-xl p-5 mb-3">
+        <section id="card" class="w-10/12 mx-auto">
+            <div class="flex flex-col lg:grid grid-cols-2 border rounded-xl p-5 mb-3 ">
 
-                <div class="flex-1">
+                <div class="flex-1  ">
                     <img src="assets/noakhali.png" alt="" srcset="">
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 my-3">
                     <div class="inline-flex border bg-slate-50 p-2 rounded gap-2">
                         <img src="assets/coin.png" alt="" srcset="">
                         <h3> <span id="noyakhali-joma">0</span> BDT</h3>
                     </div>
-                    <h2 id="noyakhali" class="font-bold">
+                    <h2 id="noyakhali" class="font-bold my-3">
                         Donate for Flood at Noakhali, Bangladesh
                     </h2>
                     <p>
@@ -64,7 +64,7 @@
 
                     <div class="my-2">
                         <input id="noyakhali-input" type="text" placeholder="Type here"
-                            class="input input-bordered w-full" />
+                            class="input input-bordered w-full my-3" />
                         <button id="noyakhali-btn" class="btn font-bold bg-green-200 w-full ">Donation</button>
                     </div>
                 </div>
@@ -72,18 +72,18 @@
             </div>
 
             <!-- card 2  -->
-            <div class="flex border rounded-xl p-5 mb-3">
+            <div class="flex flex-col lg:grid grid-cols-2 border rounded-xl p-5 mb-3">
 
                 <div class="flex-1">
-                    <img src="assets/noakhali.png" alt="" srcset="">
+                    <img src="assets/feni.png" alt="" srcset="">
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 my-3 ">
                     <div class="inline-flex border bg-slate-50 p-2 rounded gap-2">
                         <img src="assets/coin.png" alt="" srcset="">
-                        <h3> <span>0</span> BDT</h3>
+                        <h3> <span id="second-tk">0</span> BDT</h3>
                     </div>
-                    <h2 class="font-bold">
+                    <h2 id="feni" class="font-bold my-3 ">
                         Donate for Flood Relief in Feni,Bangladesh
                     </h2>
                     <p>
@@ -94,29 +94,30 @@
                     </p>
 
                     <div class="my-2">
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-                        <button class="btn font-bold bg-green-200 w-full ">Donation</button>
+                        <input id="second-input" type="text" placeholder="Type here"
+                            class="input input-bordered w-full my-3 " />
+                        <button id="second-button" class="btn font-bold bg-green-200 w-full my-3  ">Donation</button>
                     </div>
                 </div>
 
             </div>
 
             <!-- card 3  -->
-            <div class="flex border rounded-xl p-5 mb-3">
+            <div class="flex flex-col lg:grid grid-cols-2 border rounded-xl p-5 mb-3 ">
 
                 <div class="flex-1">
-                    <img src="assets/noakhali.png" alt="" srcset="">
+                    <img src="assets/quota-protest.png" alt="" srcset="">
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 my-3">
                     <div class="inline-flex border bg-slate-50 p-2 rounded gap-2">
                         <img src="assets/coin.png" alt="" srcset="">
-                        <h3> <span>0</span> BDT</h3>
+                        <h3> <span id="quotaBlnce">0</span> BDT</h3>
                     </div>
-                    <h2 class="font-bold">
+                    <h2 id="quota-histry" class="font-bold my-2">
                         Aid for Injured in the Quota Movement
                     </h2>
-                    <p>
+                    <p class="my-2">
                         The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                         donation will help provide essential supplies and to those affected by this disaster. Every
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
@@ -124,15 +125,16 @@
                     </p>
 
                     <div class="my-2">
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-                        <button class="btn font-bold bg-green-200 w-full ">Donation</button>
+                        <input id="quota-input" type="text" placeholder="Type here"
+                            class="input input-bordered w-full my-3 " />
+                        <button id="quota-button" class="btn font-bold bg-green-200 w-full  my-4">Donation</button>
                     </div>
                 </div>
 
             </div>
         </section>
         <section id="hhstry" class="w-10/12 mx-auto hidden ">
-            
+
         </section>
         <!-- modal  -->
         <div>
@@ -140,8 +142,8 @@
             <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
-                    <h3 class="text-lg font-bold">Hello!</h3>
-                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <h3 class="text-2xl font-bold">Great !!!</h3>
+                    <p class="py-4">Donation Complete</p>
                     <div class="modal-action">
                         <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
